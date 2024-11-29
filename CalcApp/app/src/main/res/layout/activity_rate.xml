@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rate_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:title="Calc-A-Watt"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:background="#FFF9C4"
+        app:layout_constraintTop_toBottomOf="@id/rate_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Block"
+                android:padding="8dp"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charges (sen/kWh)"
+                android:padding="8dp"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Row 1 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the first 200 kWh\n(1 - 200 kWh) per month"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="21.8"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Row 2 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the next 100 kWh\n(201 - 300 kWh) per month"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="33.4"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Row 3 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the next 300 kWh\n(301 - 600 kWh) per month"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="51.6"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Row 4 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the next 300 kWh\n(601 per month onwards)"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="54.6"
+                android:textColor="#000000" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
